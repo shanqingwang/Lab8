@@ -1,6 +1,7 @@
 describe('Basic user flow for SPA ', () => {
+  page.waitForNavigation()
   beforeAll(async () => {
-    await page.goto('http://127.0.0.1:5500');
+    await page.goto('127.0.0.1:5500');
     await page.waitForTimeout(500);
   });
 
