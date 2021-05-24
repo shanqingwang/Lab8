@@ -23,9 +23,9 @@ The tests will run, but no browser view shows up.
 
 5. What would your beforeAll callback look like if you wanted to start from the settings page before every test case?
 
-beforeAll(async () => {
-    await page.goto('http://127.0.0.1:5500');
-    await page.click('img[alt="settings"]');
-    await page.waitForTimeout(500);
-  });
+beforeAll(async () => {  
+    await page.goto('http://127.0.0.1:5500');  
+    await page.click('img[alt="settings"]');  
+    await page.waitForTimeout(500);  
+  });  
 
