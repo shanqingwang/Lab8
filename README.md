@@ -2,6 +2,8 @@
 
 Names: Shanqing Wang
 
+Test Screenshot: [here](tests_ss.png)
+
 ## Check your understanding q's (FILL OUT)
 1. In your own words: Where would you fit your automated tests in your Bujo project development pipeline? (just write the letter)
 
@@ -20,4 +22,10 @@ Yes, this should be pretty straightforward. You can try to input a message strin
 The tests will run, but no browser view shows up. 
 
 5. What would your beforeAll callback look like if you wanted to start from the settings page before every test case?
+
+beforeAll(async () => {
+    await page.goto('http://127.0.0.1:5500');
+    await page.click('img[alt="settings"]');
+    await page.waitForTimeout(500);
+  });
 
